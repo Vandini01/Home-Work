@@ -5,4 +5,4 @@
 *.target.
 .DS_STORE
 /srs/main/resources/log
-/srs/main/java/Test
+/srs/main/java/Test.java
