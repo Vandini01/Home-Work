@@ -11,14 +11,14 @@ public class Matematica {
         System.out.println("Друге число:");
         Float y = scanner.nextFloat();
 
-        System.out.println(x+y);
-        System.out.println(x*y);
-        System.out.println(x/y);
-        System.out.println(x-y);
-        System.out.println(x%y);
-        System.out.println(x.equals(y));
-        System.out.println(x<y);
-        System.out.println(x>y);
+        System.out.println("Сума = "+(x+y));
+        System.out.println("Множення = "+(x*y));
+        System.out.println("Ділення = "+(x/y));
+        System.out.println("Різниця = "+(x-y));
+        System.out.println("Ділення за модулем = "+(x%y));
+        System.out.println("Рівність = "+(x.equals(y)));
+        System.out.println("Перше менше другого = "+(x<y));
+        System.out.println("Перше більше другого = "+(x>y));
 
     }
 }
