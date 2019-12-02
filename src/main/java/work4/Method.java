@@ -1,4 +1,4 @@
-package work2;
+package work4;
 
 import java.util.Scanner;
 
