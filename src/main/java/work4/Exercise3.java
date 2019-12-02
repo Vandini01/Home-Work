@@ -5,6 +5,5 @@ public class Exercise3 {
         Method method = new Method();
         int width = method.inputWidth();
         method.drawRectangle(width);
-
     }
 }
