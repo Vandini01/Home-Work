@@ -1,4 +1,4 @@
-package Work1;
+package work1;
 
 public class My_Summer {
     public static void main(String[] args) {

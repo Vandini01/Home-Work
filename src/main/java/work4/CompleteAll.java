@@ -1,8 +1,8 @@
 package work4;
 
-public class Exercise7 {
+public class CompleteAll {
     public static void main(String[] args) {
-        Method method = new Method();
+        Methods method = new Methods();
         method.choice();
     }
 }

@@ -1,8 +1,8 @@
 package work4;
 
-public class Exercise2 {
+public class DrawRectangleWithTwoParameters {
     public static void main(String[] args) {
-        Method method = new Method();
+        Methods method = new Methods();
         int width = method.inputWidth();
         int height = method.inputHeight();
         method.drawRectangle(width,height);

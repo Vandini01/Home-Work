@@ -1,9 +1,9 @@
 package work4;
 
-public class Exercise4 {
+public class OutputMax {
     public static void main(String[] args) {
 
-    Method method = new Method();
+    Methods method = new Methods();
     method.test2();
 
 

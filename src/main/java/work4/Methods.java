@@ -2,7 +2,7 @@ package work4;
 
 import java.util.Scanner;
 
-class Method {
+class Methods {
     private Scanner scanner = new Scanner(System.in);
 
     //////////////////////////////111111111111111///////////////////////
@@ -68,11 +68,11 @@ class Method {
     }
 
     private void ifn() {
-        if (scanner.hasNextInt()) {
+        if (scanner.hasNextInt())
             inputInt();
-        } else {
+        else
             inputDouble();
-        }
+
     }
 
     private void inputDouble() {
@@ -96,16 +96,16 @@ class Method {
     }
 
     //////////////////////////////////55555555555555//////////////////////////////
-    void recurs5(int number, int x) {
+    void RecursOutputFromOneToX(int number, int x) {
         if (x <= number) {
             System.out.println(x);
             x++;
-            recurs5(number,x);
+            RecursOutputFromOneToX(number,x);
         }
     }
 
     ///////////////////////////////66666666666666666//////////////////////////
-    void recurs6(int width, int height, int x, int y) {
+    void RecursDrawRectangleWithTwoParameters(int width, int height, int x, int y) {
         if (y < height) {
             if (x < width) {
                 System.out.print("+");
@@ -115,7 +115,7 @@ class Method {
                     x = 0;
                     y++;
                 }
-                recurs6(width, height, x, y);
+                RecursDrawRectangleWithTwoParameters(width, height, x, y);
             }
         }
     }
@@ -128,40 +128,34 @@ class Method {
     }
 
     private void exercise(int number){
-        if (number==1){
-            exercise1();
-        }
-        else {
-                if (number==2){
-                    exercise2();
-                }
-                else {
-                    if (number==3){
-                        exercise3();
-                    }
-                    else {
-                        if (number==4){
-                            exercise4();
-                        }
-                        else {
-                            if (number==5){
-                                exercise5();
-                            }
-                            else {
-                                if (number==6){
-                                    exercise6();
-                                }
-                                else {
+        if (number==1)
+            OutputFromOneToX();
+        else
+                if (number==2)
+                    DrawRectangleWithTwoParameters();
+                else
+                    if (number==3)
+                        DrawRectangleWithOneParameters();
+                    else
+                        if (number==4)
+                            OutputMax();
+                        else
+                            if (number==5)
+                                RecursOutputFromOneToX();
+                            else
+                                if (number==6)
+                                    RecursDrawRectangleWithTwoParameters();
+                                else{
                                     System.out.println("Такої задачі не існує");
                                     choice();
-    } } } } } } }
-    private void exercise1(){
-            Method method = new Method();
+    } }
+    private void OutputFromOneToX(){
+            Methods method = new Methods();
             int number = method.input();
             method.print(number);
             continued();
     }
-    private void exercise2(){
+    private void DrawRectangleWithTwoParameters(){
 
             int width = inputWidth();
             int height =inputHeight();
@@ -169,24 +163,24 @@ class Method {
         continued();
 
     }
-    private void exercise3(){
+    private void DrawRectangleWithOneParameters(){
             int width = inputWidth();
             drawRectangle(width);
         continued();
     }
-    private void exercise4(){
+    private void OutputMax(){
             test2();
         continued();
     }
-    private void exercise5(){
+    private void RecursOutputFromOneToX(){
             int number = input();
-           recurs5(number,1);
+           RecursOutputFromOneToX(number,1);
         continued();
     }
-    private void exercise6(){
+    private void RecursDrawRectangleWithTwoParameters(){
         int width = inputWidth();
         int height = inputHeight();
-        recurs6(width,height,0,0);
+        RecursDrawRectangleWithTwoParameters(width,height,0,0);
         continued();
 
     }
@@ -194,12 +188,10 @@ class Method {
         System.out.print("Продовити? true/false- ");
         test3();
         boolean question = scanner.nextBoolean();
-        if (question){
+        if (question)
             choice();
-        }
-        else {
+        else
             System.out.println("Допобачення");
-        }
     }
 
     private void test3() {

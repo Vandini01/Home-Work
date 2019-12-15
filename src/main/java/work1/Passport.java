@@ -1,4 +1,4 @@
-package Work1;
+package work1;
 import java.util.Date;
 import java.util.Scanner;
 
